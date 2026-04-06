@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# 所有路由都返回 index.html（SPA 回退）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
